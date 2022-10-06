@@ -1,6 +1,7 @@
 .shop-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    justify-content: space-between;
 }
 
 .products-container {
@@ -10,8 +11,33 @@
     margin: 0px 15%;
 }
 
+.cart-container {
+    background: orange;
+
+}
+
 @media screen and (max-width: 1100px) {
     .products-container {
         grid-template-columns: repeat(2, 1fr);
+        margin-right: 30px;
+    }
+
+    .cart-container {
+        margin-left: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .products-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .shop-container {
+        justify-content: start;
+        position: sticky;
+        grid-template-columns: 3fr 1fr;
     }
 }
