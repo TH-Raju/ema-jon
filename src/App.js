@@ -3,10 +3,12 @@ import './App.css';
 import Inventory from './componants/Inventory/Inventory';
 import Login from './componants/Login/Login';
 import Orders from './componants/Orders/Orders';
+import Shipping from './componants/Shipping/Shipping';
 import Shop from './componants/Shop/Shop';
 import SignUp from './componants/SignUp/SignUp';
 import Main from './layouts/Main';
 import productsAndCardLoaders from './loaders/productsAndCardLoaders';
+import PrivateRoute from './Routes/PrivateRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -31,7 +33,12 @@ function App() {
         },
         {
           path: '/inventory',
-          element: <Inventory></Inventory>
+          element: <PrivateRoute><Inventory></Inventory></PrivateRoute>
+
+        },
+        {
+          path: '/shipping',
+          element: <PrivateRoute><Shipping></Shipping></PrivateRoute>
 
         },
         {
