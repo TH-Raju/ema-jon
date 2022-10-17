@@ -14,6 +14,11 @@
     margin-left: 36px;
 }
 
+.btn-logOut {
+    margin-left: 10px;
+
+}
+
 .header a:hover {
     color: orange;
 }
