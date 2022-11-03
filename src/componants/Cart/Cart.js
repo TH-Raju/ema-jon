@@ -16,11 +16,11 @@ const Cart = (props) => {
     return (
         <div className='cart'>
             <h3>Order Summary</h3>
-            <h1>Selected items: {quantity}</h1>
-            <p>Total Price: ${total}</p>
-            <p>Total Shipping: ${shipping}</p>
-            <p>Tax: {tax}</p>
-            <p>Grand Total: {grandTotal.toFixed(2)} </p>
+            <h1 className='select'>{quantity} Item Selected</h1>
+            <p className='desc'>Total Price: ${total}</p>
+            <p className='desc'>Total Shipping: ${shipping}</p>
+            <p className='desc'>Tax: {tax}</p>
+            <p className='desc'>Grand Total: {grandTotal.toFixed(2)} </p>
             {/* <button onClick={props.clearCart}>Clear Cart</button> */}
             {children}
         </div>

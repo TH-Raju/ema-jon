@@ -1,0 +1,9 @@
+.btn {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    font-size: 13px;
+    font-weight: bold;
+}

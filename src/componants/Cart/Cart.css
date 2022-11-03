@@ -3,3 +3,14 @@
     top: 0;
     padding: 30px 20px;
 }
+
+.desc {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.select {
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 15px;
+}
