@@ -46,3 +46,26 @@
     color: #EB5757;
     font-size: 31px;
 }
+
+@media screen and (max-width: 800px) {
+    .review-item {
+
+
+        width: 281px;
+        margin: 15px auto;
+        padding: 8px;
+    }
+
+    .review-item img {
+        width: 51px;
+    }
+
+    .review-details-container {
+        margin-left: 10px;
+    }
+
+    .btn-delete {
+        width: 45px;
+        height: 45px;
+    }
+}

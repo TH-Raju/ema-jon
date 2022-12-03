@@ -2,8 +2,12 @@
     background-color: #1C2B35;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 10%;
+    justify-content: space-around;
+    padding: 10px 10%;
+
+
+
+
 
 }
 
@@ -16,9 +20,73 @@
 
 .btn-logOut {
     margin-left: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: #1C2B35;
+    color: aliceblue;
+    text-align: center;
+    border-color: orange;
 
+}
+
+.hid {
+    display: none;
+}
+
+.nav {
+    padding: 5px 30px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #1C2B35;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 25px;
 }
 
 .header a:hover {
     color: orange;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        position: fixed;
+        z-index: 10;
+        width: 80%;
+    }
+
+    .fl {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 15px 10px;
+    }
+
+    .fl a {
+        margin: 5px 0px;
+    }
+
+    .header a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 17px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 4px 10px;
+        border: 1px solid orange;
+    }
+
+    .btn-logOut {
+        margin-left: 10px;
+
+    }
+
+    .hid {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+
+    }
 }

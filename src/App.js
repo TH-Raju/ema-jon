@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import About from './componants/About/About';
 import Inventory from './componants/Inventory/Inventory';
 import Login from './componants/Login/Login';
 import Orders from './componants/Orders/Orders';
@@ -25,6 +26,10 @@ function App() {
           path: '/shop',
           loader: () => fetch('https://ema-jon-server.vercel.app/products'),
           element: <Shop></Shop>
+        },
+        {
+          path: '/about',
+          element: <About></About>
         },
         {
           path: '/orders',
